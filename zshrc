@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 # This speeds up pasting w/ autosuggest
 # https://github.com/zsh-users/zsh-autosuggestions/issues/238
+
 source ~/.oh-my-zsh/plugins/incr/incr*.zsh
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
@@ -122,3 +123,8 @@ alias jason-server="ssh root@192.168.122.198"
 setopt nonomatch
 alias ssh402="ssh root@172.16.68.41"
 export PATH=/opt/gcc-linaro-7.2.1-2017.11-x86_64_aarch64-linux-gnu/bin:/home/jason/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+alias ssh129="ssh qianyi@10.60.0.129"
+alias ssh199="ssh qianyi@192.168.1.199"
+
+alias rm='rm -i'
+alias cp='cp -i'

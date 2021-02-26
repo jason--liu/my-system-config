@@ -96,3 +96,4 @@ sudo dpkg -i google-chrome*; sudo apt-get -f install
 sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
 sudo apt-get update
 sudo apt-get install notepadqq
+sudo apt install bleachbit
